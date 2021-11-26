@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css" >
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="screen" >
+                <input  type="text" placeholder="0" class="button"type="button"id="clr">
+            </div>
+            <div class="btns">
+                <table class="buttons">
+                    <tr id="row1">
+                        <td class="btn">
+                            <button onclick="display('M+')">M+</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('M-')">M-</button>
+ 
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('MR')">MR</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('MS')">MS</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('MC')">MC</button>
+
+                        </td>
+                    </tr>
+                    <tr id="row2">
+                        <td class="btn">
+                            <button>+/-</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('(')">(</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display(')')">)</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('%')">%</button>
+
+                        </td>
+                        <td class="btn">
+                            <button id="clr"onclick="clrscreen()"style="background:linear-gradient(45deg,hotpink,red);height:40px;
+                            width:61px;font-size:15px;color:white;margin-left:1px;">CE</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="btn">
+                            <button onclick="display('7')">7</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('8')" >8</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('9')">9</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('/')"style="background: linear-gradient(45deg,red,green);">/</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="del()" style="background:linear-gradient(45deg,crimson,orange);">
+                                <span class="material-icons">
+                                    backspace
+                                    </span>
+                                </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="btn">
+                            <button onclick="display('4')">4</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('5')">5</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('6')">6</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('*')" style="background: linear-gradient(45deg,red,green);">*</button>
+
+                        </td>
+                        <td rowspan="3" class="btn">
+                            <button id="clr"onclick="calculate()" style="height:125px;background: linear-gradient(45deg,darkblue,blue);color:burlywood">
+                                =</button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="btn">
+                            <button onclick="display('1')">1</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('2')">2</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('3')">3</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('-')"style="background: linear-gradient(45deg,red,green);">-</button>
+
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="btn">
+                            <button>E</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('0')">0</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('.')">.</button>
+
+                        </td>
+                        <td class="btn">
+                            <button onclick="display('+')"style="background: linear-gradient(45deg,red,green);">+</button>
+
+                        </td>
+                        
+                    </tr>
+                </table>
+
+            </div>
+
+
+        </div>
+        <script src="calc.js"></script>
+    </body>
+</html>

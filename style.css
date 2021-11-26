@@ -1,0 +1,105 @@
+body
+{
+    background: url("backgrnd.jpg");
+    position:absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.container
+{
+    border:2px solid brown;
+    height:400px;
+    width:350px;
+    margin-left: 130%;
+    margin-top:20%;
+    background: gray;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  
+.screen
+{
+    height:100px;
+    margin:10px;
+    background: black;
+    border:2px solid white;
+}
+#clr
+{
+    width:95%;
+    height:90%;
+    margin:0px;
+    background-color: black;
+    color:darkblue;
+    font-weight: bolder;
+    font-size: 40px;
+    border:none;
+}
+.btns
+{
+    border:2px solid white;
+    height:66%;
+    margin:7px;
+    background: black;
+
+}
+button
+{
+    height:40px;
+    width:61px;
+    padding: 5px;
+    margin:0px;
+    background:linear-gradient(45deg,darkblue,skyblue);
+    color: white;
+    font-weight: bolder;
+    border-radius: 20% 20% 20% 20%;
+}
+
+#row1 button
+{
+    background:linear-gradient(45deg,gold,black);
+}
+#row2 button
+{
+    background: linear-gradient(45deg,red,green);
+}
+button:hover
+{
+    color:black;
+    background: linear-gradient(60deg,red,yellow);
+}
+#row1 button:hover
+{
+    color:black;
+    background: linear-gradient(60deg,red,yellow);
+}
+#row2 button:hover
+{
+    color:black;
+    background: linear-gradient(60deg,red,yellow);
+}
